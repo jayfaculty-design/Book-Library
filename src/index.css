@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5;
+  background-color: #4e5341;
+}
+html {
+  --scrollbarBG: red;
+  --thumbBG: rgb(255, 80, 80);
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  width: 11px;
+}
+body {
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG); /* For Firefox */
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* font-family: "Archivo Black", serif; */
+}
+body::-webkit-scrollbar {
+  width: 11px;
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+.scroll-margin-top {
+  scroll-margin-top: 200px; /* Adjust to match the navbar height */
+}
+
+.progress-bar {
+  position: fixed;
+  top: 123px;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background-color: #c06445;
+  transform-origin: 0%;
+  z-index: 998;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.mobile-menu {
+  background-color: white;
+  position: absolute;
+  top: 80px;
+  right: 30px;
+  width: 30%;
+  color: black;
+  padding: 20px;
+  z-index: 999;
+}
+.mobile-menu.show-menu {
+  display: block;
+}
