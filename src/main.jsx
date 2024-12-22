@@ -3,7 +3,6 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router";
 import "./index.css";
 import App from "./App.jsx";
-import Books from "./Pages/Books";
 import Library from "./Pages/library";
 import Contact from "./Pages/Contact";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -17,7 +16,6 @@ createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="books" element={<Books />} />
       <Route path="library" element={<Library />} />
       <Route path="contact" element={<Contact />} />
       <Route path="book-detail/:title" element={<BookDetails />} />
