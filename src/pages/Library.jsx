@@ -2,7 +2,6 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { motion } from "motion/react";
 import { spring } from "motion";
-import { NavLink } from "react-router";
 
 function Library() {
   const [bookData, setBookData] = useState([]);
@@ -85,11 +84,9 @@ function Library() {
                       <h2 className="card-title">{book.title}</h2>
                       <p>Author: {book.author_name}</p>
                       <div className="card-actions justify-end">
-                        <NavLink to={`book-detail/${book.title}`}>
-                          <button className="btn btn-primary text-oranges border-oranges">
-                            Read More
-                          </button>
-                        </NavLink>
+                        <button className="btn btn-primary text-oranges border-oranges">
+                          Read More
+                        </button>
                       </div>
                     </div>
                   </motion.div>
