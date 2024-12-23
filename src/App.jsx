@@ -4,15 +4,15 @@ import viteLogo from "/vite.svg";
 import { NavLink } from "react-router";
 import { motion, useScroll, useSpring } from "motion/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Books from "./pages/Books";
-import Library from "./pages/library";
+import Books from "./Pages/Books";
+import Library from "./Pages/Library";
+import Contact from "./Pages/Contact";
 import { faBars, faPhone } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
   faInstagram,
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import Contact from "./pages/Contact";
 
 const itemVariants = {
   open: {
