@@ -4,9 +4,9 @@ import viteLogo from "/vite.svg";
 import { NavLink } from "react-router";
 import { motion, useScroll, useSpring } from "motion/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Books from "./Pages/Books";
-import Library from "./Pages/Library";
-import Contact from "./Pages/Contact";
+import Books from "./Pages/Books.jsx";
+import Library from "./Pages/Library.jsx";
+import Contact from "./Pages/Contact.jsx";
 import { faBars, faPhone } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
