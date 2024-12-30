@@ -225,7 +225,7 @@ function App() {
         </div>
       </div>
 
-      {/* Section Screen */}
+      {/* Section-Screen */}
 
       <motion.div style={{ scaleX }} className="progress-bar" />
       <div
