@@ -23,7 +23,7 @@ function Library() {
       .finally(() => {
         return setLoading(false);
       });
-  });
+  }, []);
 
   return (
     <div className="min-h-screen bg-gray-100">
